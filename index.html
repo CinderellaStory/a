@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机图片轮播</title>
+	<link rel="stylesheet" href="http://caibaojian.com/demo/2015/swiper/dist/idangerous.swiper.css">
+	<style type="text/css">
+        device {
+  width: 700px;
+  height: 300px;
+  padding: 30px 40px;
+  margin: 5px auto;
+  position: relative;
+}
+.swiper-container {
+  height: 333px;
+  width: 500px;
+}
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:5px;
+  width: 100%;
+  top: 310px;
+  z-index: 5;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #D2D2D2;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #F64A92;
+}
+	</style>
+</head>
+<body>
+     <div class="device">
+	    <div class="swiper-container">
+	      <div class="swiper-wrapper">
+	        <div class="swiper-slide"> <img src="http://www.qqpk.cn/Article/UploadFiles/201304/20130427111543397.jpg"></div>
+	        <div class="swiper-slide"> <img src="http://www.mengtu.cc/uploads/allimg/140707/1-140FH34451.jpg"></div>
+	        <div class="swiper-slide"> <img src="http://www.qqjia.com/z/01/tu4031_6.jpg"></div>
+	        <div class="swiper-slide"> <img src="http://www.mengtu.cc/uploads/allimg/140707/1-140FH34453.jpg"></div></div>
+	     </div>
+    </div>
+    <div class="pagination"></div>
+  </div>
+  <script src="http://caibaojian.com/demo/2015/swiper/demos/js/jquery-1.10.1.min.js"></script>
+  <script src="http://caibaojian.com/demo/2015/swiper/dist/idangerous.swiper.min.js"></script>
+  <script>
+  var mySwiper = new Swiper('.swiper-container',{
+    pagination: '.pagination',
+    loop:true,
+    grabCursor: true,
+    paginationClickable: true,
+	autoplay: 2000
+  })
+    </script>
+</body>
+</html>
